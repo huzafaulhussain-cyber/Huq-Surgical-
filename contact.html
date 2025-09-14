@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Haq Surgical Ldt</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 0 45px; /* Increased horizontal padding */
+            text-align: center;
+        }
+
+        .header-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3em;
+            font-weight: 700;
+            color: #008080;
+            /* Updated Theme Color */
+            margin-bottom: 10px;
+        }
+
+        .header-subtitle {
+            font-size: 1.2em;
+            color: #6c757d;
+            margin-bottom: 50px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .contact-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-icon {
+            font-size: 2.5em;
+            color: #008080;
+            /* Updated Theme Color */
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            color: #495057;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card-text a {
+            color: #20c997;
+            /* Updated Accent Color */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .card-text a:hover {
+            color: #008080;
+            /* Updated Theme Color */
+            text-decoration: underline;
+        }
+
+        .social-media-section {
+            /* Replacing solid color with a professional gradient */
+            background: linear-gradient(to right, #008080, #20c997);
+            /* Updated Gradient */
+            color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+
+        .social-media-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.8em;
+            margin: 0 15px;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .social-icons a:hover {
+            color: #ffffff;
+            /* Kept white for better contrast on gradient */
+            transform: scale(1.2);
+        }
+
+        .map-container {
+            margin-top: 30px;
+        }
+
+        .map-container h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-card,
+        .social-media-section,
+        .map-container {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        .contact-card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .contact-card:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .contact-card:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .social-media-section {
+            animation-delay: 0.8s;
+        }
+
+        .map-container {
+            animation-delay: 1s;
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            .header-title {
+                font-size: 2.2em;
+            }
+
+            .header-subtitle {
+                font-size: 1em;
+                margin-bottom: 30px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="container">
+        <h1 class="header-title">Contact HAQ Surgical</h1>
+        <p class="header-subtitle">We are always here to help. Reach out to us through any of the channels below.</p>
+
+        <div class="contact-grid">
+            <!-- Address Card -->
+            <div class="contact-card">
+                <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h2 class="card-title">Our Office</h2>
+                <p class="card-text">Street 1 Butter Road near
+                    Rescue 1122 Daburgi Malian,<br>postal code 51310, SIALKOT PAKISTAN.</p>
+
+
+
+            </div>
+
+            <!-- Email Card -->
+            <div class="contact-card ">
+                <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                <h2 class="card-title">Email Us</h2>
+                <p class="card-text ">For inquiries and support, email us at:<br>
+                    <a href="mailto:masoodhqsurgicals@gmail.com" target="_blank">masoodhqsurgicals@gmail.com</a>
+                    <a href="mailto:info@haqsurgical.com" target="_blank">Info@haqsurgical.com</a>
+                    <a href="mailto:sales@haqsurgical.com" target="_blank">Sales@haqsurgical.com</a>
+                </p>
+
+
+
+
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card">
+                <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                <h2 class="card-title">Call Us</h2>
+                <p class="card-text">Mon - Sat, 9am - 6pm (PKT)<br>
+                    <a href="tel:+92 331 2655 556">+92 331 2655 556</a><br>
+                    <a href="tel:+92 323 5008 238">+92 323 5008 238</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="social-media-section">
+            <h2>Connect With Us on Social Media</h2>
+            <p>Follow us for the latest updates and news.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-container">
+            <h2>Find Us Here</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.225047331083!2d74.49717891502185!3d32.49341368105862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ee97e52e7bf51%3A0x1e03e391722fc53!2sHAQ%20SURGICAL(PVT)%2C.LTD!5e0!3m2!1sen!2s!4v1593081731069!5m2!1sen!2s"
+                width="100%" height="1050" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+    </div>
+    <br>
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

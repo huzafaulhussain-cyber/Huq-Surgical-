@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haq Surgical Ldt</title>
+    <!-- Google Fonts for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .footer-wrapper {
+            position: relative;
+            background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+            color: #e0e0e0;
+        }
+
+        .footer-wave {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+        }
+
+        .site-footer {
+            padding: 60px 0 20px;
+        }
+
+        .site-footer hr {
+            border-top-color: #4a5c64;
+            /* Increased opacity to override Bootstrap */
+            opacity: 0.5 !important;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .site-footer h6 {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+            color: #e8c897;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .site-footer h6::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #e8c897;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .site-footer a {
+            position: relative;
+            color: #e0e0e0;
+            display: inline-block;
+            text-decoration: none;
+            transition: color 0.3s ease, letter-spacing 0.3s ease;
+        }
+
+        .site-footer a:hover {
+            color: #e8c897;
+            letter-spacing: 1px;
+        }
+
+        .site-footer h6:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .footer-col .footer-links a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #e8c897;
+            transform: scaleX(0);
+            transform-origin: bottom left;
+            transition: transform 0.3s ease-out;
+        }
+
+        .footer-col .footer-links a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .footer-links {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links i {
+            margin-right: 10px;
+            color: #e8c897;
+            width: 20px;
+        }
+
+        .footer-container {
+            max-width: 1170px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            width: 100%;
+            position: relative;
+            margin-bottom: 30px;
+            padding: 0 15px;
+            transition: transform 0.3s ease-out;
+        }
+
+        @media (min-width: 768px) {
+            .footer-col {
+                flex: 1;
+            }
+        }
+
+        .copyright-text {
+            margin: 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .copyright-text a {
+            font-weight: 500;
+        }
+
+        .social-icons {
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            font-size: 18px;
+            display: inline-block;
+            line-height: 42px;
+            width: 42px;
+            height: 42px;
+            text-align: center;
+            margin-right: 8px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            background: #e8c897;
+            border-color: #e8c897;
+            color: #1d2b32;
+        }
+
+        .bottom-footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .copyright-col,
+        .social-col {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        @media (min-width: 768px) {
+
+            .copyright-col,
+            .social-col {
+                width: auto;
+            }
+
+            .copyright-text {
+                text-align: left;
+            }
+
+            .social-icons {
+                text-align: right;
+            }
+
+            .copyright-col,
+            .social-col {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .footer-col {
+                text-align: center;
+            }
+
+            .footer-links i {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="footer-wrapper">
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h6>About Us</h6>
+                        <p>Established in 1990, HAQ SURGICAL (Pvt) Ltd. leverages its expertise to produce high-quality
+                            medical instruments for confident use in hospitals and clinics worldwide.</p>
+                    </div>
+
+                    <div class="footer-col">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h6>Contact</h6>
+                        <ul class="footer-links">
+                            <li><i class="fa fa-map-marker-alt"></i>HAQ SURGICAL (PVT)LTD,
+                                Street 1 Butter Road near Rescue 1122 Daburgi Malian,
+                                postal code 51310, SIALKOT PAKISTAN.</li>
+                            <li><i class="fa fa-phone-alt"></i> +92 321 117 2335</li>
+                            <li><i class="fa fa-envelope"></i> masoodhqsurgicals@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="footer-container">
+                <div class="bottom-footer-row">
+                    <div class="copyright-col">
+                        <p class="copyright-text"> © Copy Rights 2020 Haq Surgical Private Limited
+                            <a href="/index.html">Haq Surgical</a>.
+                        </p>
+                        Design & Developed by: Graphixals
+                    </div>
+
+                    <div class="social-col">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+</body>
+
+</html>

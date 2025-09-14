@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haq Surgical Ldt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #0f2027;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #e8c897;
+        }
+
+        .hero {
+            height: 50vh;
+            background-image: linear-gradient(rgba(15, 32, 39, 0.7), rgba(44, 83, 100, 0.7)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .story-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .story-section p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .stats-section {
+            background-color: #ffffff;
+            padding: 60px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-item .icon {
+            font-size: 2.5rem;
+            color: #e8c897;
+            margin-bottom: 10px;
+        }
+
+        .stat-item .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0f2027;
+        }
+
+        .stat-item .text {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .features-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #e8c897;
+            width: 40px;
+            text-align: center;
+        }
+
+        .feature-card p,
+        .feature-card ul {
+            color: #555;
+        }
+
+        .feature-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-card ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        .feature-card ul li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #e8c897;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div id="navbar-container"></div>
+
+    <section>
+
+
+        <section class="hero">
+            <h1>About HAQ SURGICAL</h1>
+        </section>
+
+        <section class="story-section">
+            <div class="container">
+                <h2 class="section-title">Our Story</h2>
+                <p>HAQ SURGICAL (Pvt) Ltd. was established in 1990 but has experience beyond its years. We have the
+                    right knowledge and expertise for production and customer care. Our vision before and now is to
+                    manufacture high-quality medical instruments that are to be used freely and confidently in hospitals
+                    and clinics around the globe.</p>
+                <p>If your company is looking for unique, innovative and smart medical products from Pakistan, feel free
+                    to reach out to us. We will make sure that HAQ SURGICAL is your one-stop-shop for reliability and
+                    quality.</p>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="icon"><i class="fa-solid fa-calendar-check"></i></div>
+                        <div class="number">30+</div>
+                        <div class="text">Years of Innovation</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                        <div class="number">50+</div>
+                        <div class="text">Global Partners</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="icon"><i class="fa-solid fa-box-archive"></i></div>
+                        <div class="number">1000+</div>
+                        <div class="text">Precision Instruments</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="number">100%</div>
+                        <div class="text">Customer Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3><i class="fa-solid fa-rocket"></i> Future Oriented</h3>
+                        <p>We are a forward looking Company and are continuously studying the changing market and
+                            business needs of our customers. Our long term goals include:</p>
+                        <ul>
+                            <li>Developing proprietary instruments for the HAQ SURGICAL brand.</li>
+                            <li>Introducing robot-assisted surgical systems.</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fa-solid fa-box-open"></i> Product’s Line</h3>
+                        <p>We manufacture and deliver a wide range of surgical and dental instruments, covering
+                            thousands of items from typical to sophisticated. We can also create custom instruments from
+                            a sample or a photo with measurements.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fa-solid fa-handshake-angle"></i> Commitment to Excellence</h3>
+                        <p>Our promise is to deliver the best possible product at a very competitive rate. We intend to
+                            keep up with the changing healthcare system to continue delivering quality service and
+                            enabling the best patient care.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fa-solid fa-shield-halved"></i> Reliability & Quality</h3>
+                        <p>We ensure that HAQ SURGICAL is your one-stop-shop for reliability and quality. We use German
+                            Stainless Steel and our expertise to produce instruments that can be used freely and
+                            confidently around the globe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
